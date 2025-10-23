@@ -1,0 +1,133 @@
+/* ====== FONDO DIVIDIDO ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Fondo de dos colores (mitad turquesa y mitad blanco) */
+.background-split {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #009688 50%, #ffffff 50%);
+  z-index: -1;
+}
+
+/* Contenedor del contenido */
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background-color: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #009688;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4d6e43;
+}
+
+/* ====== IMAGEN PRINCIPAL Y MENSAJE ====== */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  color: #3980c4;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.hero h2 {
+  color: #555;
+  font-weight: normal;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+/* ====== VIDEO ====== */
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.video-title {
+  color: #000000;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 15px;
+  color: #444;
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
